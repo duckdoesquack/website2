@@ -1,0 +1,361 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo across all pages*/
+.logo-img {
+  height: 40px;  /* adjust to your preferred size */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 350px;
+  position: relative;
+}
+
+.hero-section img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.hero-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+}
+
+/* Main Section Styling */
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid goldenrod;
+  padding-left: 1rem;
+}
+
+/* Information Page - Section Layout */
+.content-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Push content below fixed navbar */
+body::before {
+  content: "";
+  display: block;
+  height: 70px; /* Same as navbar height */
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;        /* Keeps it at the top */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .nav-link {
+  color: #444;
+  font-weight: 500;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: goldenrod;
+}
+
+html {
+  scroll-padding-top: 100px; /* does not block the title when using the href*/
+}
+
+/* history */
+.text-golden {
+  color: goldenrod;
+}
+
+.accordion-button:hover {
+  background-color: #fff3cd; /* a light warm yellow, adjust as you like */
+  color: goldenrod;          /* match your theme color */
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fdf4d8;
+  color: goldenrod;
+}
+
+.accordion-body {
+  background-color: #fffef8;
+}
+
+ul {
+  list-style-type: disc; /* Default for main bullets */
+}
+
+ul ul {
+  list-style-type: square; /* Change sub-bullets here */
+}
+
+/* Festival Card Styling */
+.festival-card {
+  background-color: #fff8e1;
+  border-left: 6px solid goldenrod;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.festival-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.festival-card {
+  background-color: #fdfcf5;
+  border-left: 5px solid #6c757d;
+}
+
+.festival-quote {
+  font-style: italic;
+  color: #666;
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 4px solid #ccc;
+}
+
+/* flip card */
+.flip-card {
+  background-color: transparent;
+  width: 250px;         /* Default width */
+  max-width: 100%;      /* Prevent overflow on small screens */
+  height: 150px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  display: block; /* Changed from flex to block for scroll consistency */
+  padding: 1rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow-y: auto;
+  line-height: 1.4;
+}
+
+.flip-card-front {
+  background-color: #f3f3f3;
+  color: #444;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #ffe6b3;
+  color: #333;
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  overflow-y: auto;     /* vertical scroll for overflow */
+  padding-right: 1rem;  /* space for scrollbar */
+  z-index: 1;
+}
+
+/* Carousel Styling */
+
+.festival-carousel img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* making it responsive pictures */
+@media (min-width: 768px) {
+  .festival .col-md-8,
+  .festival .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .festival .festival-card,
+  .festival .carousel-inner {
+    height: 100%;
+  }
+
+  .festival-carousel img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.festival-caption {
+  background: rgba(0, 0, 0, 0.6);
+  font-family: 'Georgia', serif;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Row spacing between Festivals */
+.festival-row {
+  margin-bottom: 70px;
+}
+
+/* button effects */
+.button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+}
+
+
+.edge {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left,
+          hsl(246, 100%, 16%) 0%,
+          hsl(246, 100%, 32%) 8%,
+          hsl(246, 100%, 32%) 92%,
+          hsl(244, 100%, 16%) 100%);
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: white;
+  background: hsl(212, 100%, 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button:hover {
+  filter: brightness(110%);
+}
+
+.button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button:active .shadow {
+  transform: translateY(-6px);
+  transition: transform 34ms;
+}
+
+/* form page */
+
+/* Newsletter description section styling */
+#newsletterDescTitle {
+  font-weight: 600;
+  color: #2c3e50; /* dark blue-gray */
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+section[aria-labelledby="newsletterDescTitle"] p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* medium gray */
+  margin-bottom: 0.75rem;
+}
+
+/* add a subtle border or background */
+section[aria-labelledby="newsletterDescTitle"] {
+  background-color: #f9f9f9;
+  border-left: 4px solid #5cb85c; /* green accent */
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* form validation if correct */
+input[aria-invalid="true"] {
+  outline: 2px solid #cf182b; /* red */
+  outline-offset: 2px;
+}
+
+input.valid {
+  outline: 2px solid #4dc469; /* green */
+  outline-offset: 2px;
+}

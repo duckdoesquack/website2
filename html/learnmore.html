@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Taoism Newsletter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <!-- src : https://pixabay.com/illustrations/yin-yang-and-yin-yang-yin-and-yang-1341378/ -->
+            <img src="../images/yin_logo.png" alt="Taoism Logo" class="logo-img" style="height: 40px;" />
+            <!-- Text next to logo -->
+            <span class="fw-bold fs-4 text-dark align-middle">Taoism</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/information.html">Information</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../html/learnmore.html">Learn More</a></li>
+            </ul>
+        </div> 
+        </div>
+    </nav>
+
+
+<!-- Newsletter Form -->
+    <div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+        <h2 class="text-center mb-4">Subscribe to Our Taoism Newsletter</h2>
+
+        <!-- Newsletter description -->
+        <section aria-labelledby="newsletterDescTitle" class="mb-4">
+            <h3 id="newsletterDescTitle">What to Expect</h3>
+            <p>
+            Join our Taoism newsletter to receive monthly updates on Taoist festivals, meditation practices, historical insights, and practical wisdom for daily life.
+            </p>
+            <p>
+            Stay connected with the Taoist community and celebrate traditional festivals throughout the year.
+            </p>
+        </section>
+
+        <form id="newsletterForm" novalidate>
+            <!-- Your form fields here... -->
+            <!-- Full Name -->
+            <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" id="fullName" name="fullName" class="form-control" aria-describedby="nameError" required>
+            <small id="nameError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" aria-describedby="emailError" required>
+            <small id="emailError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <!-- Age -->
+            <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" id="age" name="age" class="form-control" min="10" max="120" aria-describedby="ageError">
+            <small id="ageError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <!-- Birthday -->
+            <div class="mb-3">
+            <label for="birthday" class="form-label">Birthday</label>
+            <input type="date" id="birthday" name="birthday" class="form-control" aria-describedby="birthdayError">
+            <small id="birthdayError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <!-- Newsletter Frequency -->
+            <div class="mb-3">
+            <label class="form-label">Newsletter Frequency</label><br>
+            <input type="radio" id="weekly" name="frequency" value="Weekly">
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="monthly" name="frequency" value="Monthly">
+            <label for="monthly">Monthly</label>
+            <small id="frequencyError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <!-- Topics -->
+            <div class="mb-3">
+            <label class="form-label">Topics of Interest</label><br>
+            <input type="checkbox" id="philosophy" name="topics" value="Philosophy">
+            <label for="philosophy">Philosophy</label><br>
+            <input type="checkbox" id="meditation" name="topics" value="Meditation">
+            <label for="meditation">Meditation</label><br>
+            <input type="checkbox" id="history" name="topics" value="History">
+            <label for="history">Taoist History</label>
+            <small id="topicsError" class="text-danger" style="display:none;"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="../js/code.js" defer></script>
+</html>
