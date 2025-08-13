@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,36 +8,56 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<!-- Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
+      <!-- allows when button pressed to bring to home -->
       <a class="navbar-brand" href="index.html">
         <!-- src : https://pixabay.com/illustrations/yin-yang-and-yin-yang-yin-and-yang-1341378/ -->
         <img src="images/yin_logo.png" alt="Taoism Logo" class="logo-img" style="height: 40px;" />
-        <!-- Text next to logo -->
+        <!-- text next to logo -->
         <span class="fw-bold fs-4 text-dark align-middle">Taoism</span>
       </a>
+      <!-- mobile hamburger menu button - only visible on smaller screens -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- collapsible navigation menu - hides on mobile, expands when hamburger is clicked -->
+      <!-- justify-content-end aligns navigation links to the right side -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
+          <!-- home page link - marked as 'active' to show current page (coloured) -->
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="html/information.html">Information</a></li>
           <li class="nav-item"><a class="nav-link" href="html/learnmore.html">Learn More</a></li>
         </ul>
-      </div> 
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <div class="hero-section position-relative">
-    <img src="images/lady_in_temple.jpg" alt="Lady in Temple" class="img-fluid w-100 h-100 object-fit-cover position-absolute">
+    <!-- src : https://www.pexels.com/photo/woman-holding-incense-sticks-1000385/ -->
+    <!-- img fluid: makes it responsive -->
+    <!-- object-fit-cover: scales image to cover container while maintaining aspect ratio -->
+    <!-- position-absolute: removes from document flow, allows overlay content on top -->
+    <img src="images/lady_in_temple.jpg" alt="Lady in Temple"
+      class="img-fluid w-100 h-100 object-fit-cover position-absolute">
+    <!-- Overlay container: positioned on top of background image -->
+    <!-- d-flex: creates flexbox layout for centering content -->
+    <!-- align-items-center: vertically centers content -->
+    <!-- justify-content-center: horizontally centers content -->
+    <!-- px-3: adds horizontal padding for mobile spacing -->
     <div class="hero-overlay d-flex align-items-center justify-content-center text-white text-center px-3">
       <div class="container">
+        <!-- display-5: bootstrap's large display heading size -->
+        <!-- fw-bold: makes text bold/heavy weight -->
         <h1 class="display-5 fw-bold">Taoism: The Way of Tao</h1>
+        <!-- Subtitle/tagline - secondary descriptive text -->
+        <!-- lead: Bootstrap class for emphasized paragraph text -->
         <p class="lead">Embracing Balance and Simplicity</p>
       </div>
     </div>
@@ -44,27 +65,77 @@
 
   <!-- Main Content -->
   <main>
+    <!-- mt-4 mt-5: adds top margin (medium on mobile, large on desktop) -->
     <section id="main-content" class="container mt-4 mt-5">
-      <div class="row align-items-center g-4">
+      <!-- Bootstrap grid row with gutters for spacing between columns -->
+      <!-- g-4: adds consistent spacing/gutters between grid columns -->
+      <div class="row g-4">
 
         <!-- Image and quote -->
+        <!-- order-1 order-lg-1: ensures this appears first on all screen sizes (desktop, mobile) -->
         <div class="col-md-4 col-12 text-center order-1 order-lg-1">
-          <!-- src : Generated from ChatGPT -->
-          <img src="images/laotzu.png" alt="Laotzu" class="img-fluid mb-3" width="250" height="250"/>
+          <!-- src : picture generated from ChatGPT -->
+          <img src="images/laotzu.png" alt="Laotzu" class="img-fluid mb-3" width="250" height="250" />
           <blockquote class="blockquote">
-            <p class="mb-0 fs-6 fs-md-5"">"Knowing others is intelligence; knowing yourself is true wisdom."</p>
+            <!-- quote text with responsive font sizing -->
+            <!-- mb-0: removes default paragraph margin -->
+            <!-- fs-6 fs-md-5: smaller font on mobile, medium font on desktop -->
+            <p class="mb-0 fs-6 fs-md-5">"Knowing others is intelligence; knowing yourself is true wisdom."</p>
+            <!-- blockquote-footer: Bootstrap class for quote citations -->
+            <!-- mt-1: adds small top margin for spacing -->
             <footer class="blockquote-footer mt-1">Laozi</footer>
           </blockquote>
         </div>
 
         <!-- Text content -->
+        <!-- Right column: Main text content -->
+        <!-- col-lg-8: takes 8/12 columns on large screens -->
+        <!-- col-md-7: takes 7/12 columns on medium screens -->
+        <!-- col-12: takes full width on small screens -->
+        <!-- order-2 order-lg-2: appears second on all screen sizes -->
+        <!-- mb-4: adds bottom margin for spacing -->
         <div class="col-lg-8 col-md-7 col-12 order-2 order-lg-2 mb-4">
+          <!-- page-title: custom class for styling -->
+          <!-- fs-3 fs-md-2: responsive font sizing (large on mobile, extra large on desktop) -->
+          <!-- mb-3: bottom margin for spacing -->
           <h2 class="page-title fs-3 fs-md-2 mb-3">Why Explore Taoism?</h2>
+          <!-- lead: Bootstrap class for emphasized/larger paragraph text -->
+          <!-- fs-6 fs-md-5: responsive font sizing -->
           <p class="lead fs-6 fs-md-5">
-            Taoism, or Daoism, is an ancient Chinese philosophy and spiritual tradition that emphasizes living in harmony with the Tao — the fundamental nature of the universe.
+            Taoism, or Daoism, is an ancient Chinese philosophy and spiritual tradition that emphasizes living in
+            harmony with the Tao — the fundamental nature of the universe.
           </p>
+
+          <!-- Subsection 1: Inner Peace -->
+          <!-- fs-5 fs-md-4: responsive heading size -->
+          <!-- mt-4: larger top margin to separate from previous content -->
+          <!-- mb-2: small bottom margin before paragraph -->
+          <h4 class="fs-5 fs-md-4 mt-4 mb-2">Find Inner Peace in Chaos</h4>
           <p class="fs-6">
-            Taoism encourages individuals to embrace simplicity, humility, and spontaneity, seeking balance in all things.
+            In our fast-paced world, Taoism offers a refuge of calm. It teaches us to flow like water—adaptable, gentle,
+            yet powerful. Instead of fighting against life's challenges, we learn to move with them naturally.
+          </p>
+
+          <!-- Subsection 2: Simplicity -->
+          <!-- mt-3: medium top margin between sections -->
+          <h4 class="fs-5 fs-md-4 mt-3 mb-2">Embrace Simplicity</h4>
+          <p class="fs-6">
+            Taoism encourages us to strip away unnecessary complexities and focus on what truly matters. This philosophy
+            of simplicity can reduce stress, increase clarity, and help you find contentment in everyday moments.
+          </p>
+
+          <!-- Subsection 3: Balance -->
+          <h4 class="fs-5 fs-md-4 mt-3 mb-2">Balance in All Things</h4>
+          <p class="fs-6">
+            The concept of Yin and Yang teaches us that opposites are complementary, not conflicting. Work and rest,
+            strength and gentleness, action and stillness—Taoism shows us how to find harmony between life's contrasts.
+          </p>
+
+          <!-- Subsection 4: Practical Applications -->
+          <h4 class="fs-5 fs-md-4 mt-3 mb-2">Practical Wisdom for Modern Life</h4>
+          <p class="fs-6">
+            From mindful meditation and Tai Chi to feng shui and traditional Chinese medicine, Taoist practices offer
+            concrete tools for improving physical health, mental clarity, and spiritual well-being in today's world.
           </p>
         </div>
 
@@ -76,45 +147,60 @@
     <div class="row text-center mb-4">
       <h2 class="section-title fs-3 fs-md-2">📚 Learn About Taoism 📚</h2>
     </div>
+    <!-- g-3 g-md-4: spacing between cards (large on desktop, medium on mobile) -->
     <div class="row g-3 g-md-4">
-      <!-- Origins of Taoism -->
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column p-3 p-md-4">
-            <h3 class="card-title fs-5 fs-md-4">Origins of Taoism</h3>
-            <p class="card-text flex-grow-1 fs-6">
-              Learn about the beginnings of Taoism, the teachings of Laozi, and the timeless wisdom found in the Tao Te Ching.
-            </p>
-            <a href="html/information.html#history" class="btn btn-outline-primary mt-auto">Learn the History</a>
+      <!-- card 1: Origins of Taoism -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- h-100: makes all cards same height regardless of content length -->
+          <!-- shadow-sm: adds subtle drop shadow for depth -->
+          <div class="card h-100 shadow-sm">
+            <!-- Card content area with flexible layout -->
+            <!-- d-flex flex-column: arranges content vertically -->
+            <div class="card-body d-flex flex-column p-3 p-md-4">
+              <!-- Card heading with responsive font size -->
+              <h3 class="card-title fs-5 fs-md-4">Origins of Taoism</h3>
+              <!-- flex-grow-1: expands to fill available space, pushes button to bottom -->
+              <!-- fs-6: consistent body text size -->
+              <p class="card-text flex-grow-1 fs-6">
+                Learn about the beginnings of Taoism, the teachings of Laozi, and the timeless wisdom found in the Tao
+                Te Ching.
+              </p>
+              <!-- Call-to-action button -->
+              <!-- btn btn-outline-primary: Bootstrap outlined primary button style -->
+              <!-- mt-auto: pushes button to bottom of card (auto top margin) -->
+              <!-- links to specific section (#history) on information page -->
+              <a href="html/information.html#history" class="btn btn-outline-primary mt-auto">Learn the History</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Festivals and Rituals -->
-      <div class="col-lg-4 col-md-6 col-12">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column p-3 p-md-4">
-            <h3 class="card-title fs-5 fs-md-4">Festivals and Rituals</h3>
-            <p class="card-text flex-grow-1 fs-6">
-              Discover the vibrant festivals that reflect Taoist values, from Chinese New Year to Qingming Festival.
-            </p>
-            <a href="html/information.html#festival" class="btn btn-outline-primary mt-auto">Explore Festivals</a>
+        <!-- Festivals and Rituals -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column p-3 p-md-4">
+              <h3 class="card-title fs-5 fs-md-4">Festivals and Rituals</h3>
+              <p class="card-text flex-grow-1 fs-6">
+                Discover the vibrant festivals that reflect Taoist values, from Chinese New Year to Qingming Festival.
+              </p>
+              <a href="html/information.html#festival" class="btn btn-outline-primary mt-auto">Explore Festivals</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Taoism vs Buddhism -->
-      <div class="col-lg-4 col-md-12 col-12">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body d-flex flex-column p-3 p-md-4">
-            <h3 class="card-title fs-5 fs-md-4">Common Misconceptions</h3>
-            <p class="card-text flex-grow-1 fs-6">
-              Taoism, an ancient Chinese philosophy and religion, is often misunderstood due to its complex ideas and cultural differences.
-            </p>
-            <a href="html/information.html#comparison" class="btn btn-outline-success mt-auto">Learn the Differences</a>
+        <!-- Taoism vs Buddhism -->
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column p-3 p-md-4">
+              <h3 class="card-title fs-5 fs-md-4">Common Misconceptions</h3>
+              <p class="card-text flex-grow-1 fs-6">
+                Taoism, an ancient Chinese philosophy and religion, is often misunderstood due to its complex ideas and
+                cultural differences.
+              </p>
+              <a href="html/information.html#comparison" class="btn btn-outline-success mt-auto">Learn the
+                Differences</a>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -123,4 +209,5 @@
   <!-- javascript file -->
   <script src="js/code.js"></script>
 </body>
+
 </html>
