@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taoist Festivals</title>
+  <title>Taoist Culture</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
 
-<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
-        <a class="navbar-brand" href="../index.html">
-            <!-- src : https://pixabay.com/illustrations/yin-yang-and-yin-yang-yin-and-yang-1341378/ -->
-            <img src="../images/yin_logo.png" alt="Taoism Logo" class="logo-img" style="height: 40px;" />
-            <!-- Text next to logo -->
-            <span class="fw-bold fs-4 text-dark align-middle">Taoism</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../html/information.html">Information</a></li>
-            <li class="nav-item"><a class="nav-link" href="../html/learnmore.html">Learn More</a></li>
-            </ul>
-        </div> 
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <!-- src : https://pixabay.com/illustrations/yin-yang-and-yin-yang-yin-and-yang-1341378/ -->
+        <img src="../images/yin_logo.png" alt="Taoism Logo" class="logo-img" style="height: 40px;" />
+        <!-- next to logo -->
+        <span class="fw-bold fs-4 text-dark align-middle">Taoism</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../html/information.html">Information</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/learnmore.html">Learn More</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!-- Header -->
+  <!-- Header -->
   <header class="bg-light py-3 py-md-5 text-center">
     <div class="container">
       <h1 class="display-6 display-md-5 fw-bold">Taoist Culture</h1>
@@ -39,27 +41,48 @@
     </div>
   </header>
 
-<!-- History of Taoism (Interactive) -->
+  <!-- History of Taoism (Interactive) -->
   <section id="history" class="history-section py-3 py-md-5">
     <div class="container">
       <h2 class="text-center mb-4 fs-3 fs-md-2">📜 History of Taoism 📜</h2>
 
+      <!-- Bootstrap accordion component for collapsible content panels -->
+      <!-- id="historyAccordion": unique identifier for accordion grouping -->
       <div class="accordion" id="historyAccordion">
-        <!-- Laozi -->
+        <!-- accordion item 1:Laozi -->
         <div class="accordion-item">
+          <!-- Accordion header - clickable area that expands/collapses content -->
+          <!-- accordion-header: Bootstrap class for header styling -->
+          <!-- id="headingLaozi": unique identifier for this specific header -->
           <h2 class="accordion-header" id="headingLaozi">
-            <button class="accordion-button fs-6 fs-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLaozi">
+            <!-- Accordion button - triggers expand/collapse functionality -->
+            <!-- accordion-button: Bootstrap class for interactive button styling -->
+            <!-- data-bs-toggle="collapse": Bootstrap JavaScript behavior for collapsing -->
+            <!-- data-bs-target="#collapseLaozi": specifies which content panel to toggle -->
+            <button class="accordion-button fs-6 fs-md-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseLaozi">
               Laozi: The Founder
             </button>
           </h2>
+          <!-- Collapsible content panel - hidden by default (collapse in to open by default)-->
+          <!-- accordion-collapse collapse: Bootstrap classes for collapsible behavior -->
+          <!-- data-bs-parent="#historyAccordion": ensures only one panel open at a time -->
           <div id="collapseLaozi" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+            <!-- Content body of the accordion panel -->
+            <!-- accordion-body: Bootstrap class for content area styling and padding -->
             <div class="accordion-body">
+              <!-- Subsection heading about Laozi -->
               <h4 class="mb-2 fs-5 fs-md-4"><strong>Laozi (or Lao Tzu)</strong></h4>
-              <p class="fs-6">He is considered the founder of Taoism. He was a wise philosopher who lived around the 6th century BCE in China.</p>
+              <!-- Introduction paragraph about Laozi -->
+              <p class="fs-6">He is considered the founder of Taoism. He was a wise philosopher who lived around the 6th
+                century BCE in China.</p>
+              <!-- Subheading for historical details -->
               <h5 class="mt-4 fs-6 fs-md-5"><strong>Historical Background</strong></h5>
+              <!-- List of historical facts about Laozi -->
               <ul class="fs-6">
                 <li>Laozi is one of the most revered figures in Chinese philosophy.</li>
-                <li>Despite his deep influence, very little is known about him with certainty, much of it comes from legends and oral tradition.</li>
+                <li>Despite his deep influence, very little is known about him with certainty, much of it comes from
+                  legends and oral tradition.</li>
                 <li>He was said to be a royal archivist at the court of the Zhou Dynasty.</li>
                 <li>Disillusioned with society's corruption, he left China to travel west.</li>
                 <li>At Hangu Pass, a gatekeeper requested he leave behind his wisdom before departing.</li>
@@ -71,15 +94,18 @@
 
         <!-- Dao De Ching -->
         <div class="accordion-item">
+          <!-- id="headingBook": unique identifier for accordion grouping -->
           <h2 class="accordion-header" id="headingBook">
-            <button class="accordion-button collapsed fs-6 fs-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBook">
+            <button class="accordion-button collapsed fs-6 fs-md-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseBook">
               Dao De Ching: The Book of the Way
             </button>
           </h2>
           <div id="collapseBook" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
             <div class="accordion-body">
               <h4 class="mb-2 fs-5 fs-md-4"><strong>Dao De Jing (or Tao Te Ching)</strong></h4>
-              <p class="fs-6">The <em>Dao De Ching</em> is a short book with 81 poems. It teaches people how to live simply, calmly, and in harmony with nature — by following the <strong>Tao</strong>, or "the Way."</p>
+              <p class="fs-6">The <em>Dao De Ching</em> is a short book with 81 poems. It teaches people how to live
+                simply, calmly, and in harmony with nature — by following the <strong>Tao</strong>, or "the Way."</p>
               <ul class="fs-6">
                 <li>Translated as <em>"The Book of the Way and its Power"</em>.</li>
                 <li>Explores harmony with the Dao (Tao) — the natural way of the universe.</li>
@@ -87,6 +113,9 @@
                 <li>Became foundational to both religious and philosophical Taoism.</li>
                 <li>Influenced Buddhism, Confucianism, and modern mindfulness philosophies.</li>
               </ul>
+              <!-- Inspirational quote from Laozi -->
+              <!-- blockquote: Bootstrap component for styled quotations -->
+              <!-- border-start: adds colored left border to visually distinguish quote -->
               <blockquote class="blockquote border-start ps-3 mt-3 fs-6">
                 "Knowing others is intelligence; knowing yourself is true wisdom." — Laozi
               </blockquote>
@@ -96,8 +125,10 @@
 
         <!-- Evolution -->
         <div class="accordion-item">
+          <!-- id="headingEvolution": unique identifier for accordion grouping -->
           <h2 class="accordion-header" id="headingEvolution">
-            <button class="accordion-button collapsed fs-6 fs-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEvolution">
+            <button class="accordion-button collapsed fs-6 fs-md-5" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEvolution">
               Evolution of Taoism
             </button>
           </h2>
@@ -105,28 +136,33 @@
             <div class="accordion-body">
               <h5 class="mb-2 fs-6 fs-md-5"><strong>Early Beginnings</strong></h5>
               <ul class="fs-6">
-                <li>Taoism began as a <strong>philosophy</strong> focused on harmony with nature and the Tao (the Way).</li>
-                <li>Religious Taoism added temples, rituals, meditation, and worship of spiritual beings known as <em>immortals</em></li>
-                <li>During the <strong>Han Dynasty</strong>, Taoism developed into an <strong>organized religion</strong>.</li>
-                <li>Religious Taoism introduced:</li>  
+                <li>Taoism began as a <strong>philosophy</strong> focused on harmony with nature and the Tao (the Way).
+                </li>
+                <li>Religious Taoism added temples, rituals, meditation, and worship of spiritual beings known as
+                  <em>immortals</em>
+                </li>
+                <li>During the <strong>Han Dynasty</strong>, Taoism developed into an <strong>organized
+                    religion</strong>.</li>
+                <li>Religious Taoism introduced:
                   <ul>
                     <li><strong>Temples and priesthood</strong></li>
                     <li><strong>Rituals and ceremonies</strong></li>
                     <li><strong>Meditation and inner alchemy</strong></li>
                     <li><strong>Worship of gods, immortals, and spirits</strong></li>
                   </ul>
+                </li>
               </ul>
               <h5 class="mb-2 fs-6 fs-md-5"><strong>Modern Taoism</strong></h5>
               <ul class="fs-6">
                 <li>Taoist ideas continue to influence many areas of modern life.</li>
-                <li>Common today in:
-                  <ul>
-                    <li><strong>Traditional Chinese Medicine (TCM)</strong></li>
-                    <li><strong>Martial arts</strong> like Tai Chi and Qigong</li>
-                    <li><strong>Feng Shui</strong> and energy balancing</li>
-                    <li><strong>Mindfulness and meditation</strong> practices</li>
-                  </ul>
-                </li>
+                  <li>Common today in:
+                    <ul>
+                      <li><strong>Traditional Chinese Medicine (TCM)</strong></li>
+                      <li><strong>Martial arts</strong> like Tai Chi and Qigong</li>
+                      <li><strong>Feng Shui</strong> and energy balancing</li>
+                      <li><strong>Mindfulness and meditation</strong> practices</li>
+                    </ul>
+                  </li>
                 <li>Practiced as both:
                   <ul>
                     <li>A <strong>religion</strong> with festivals and temple rituals</li>
@@ -134,7 +170,8 @@
                   </ul>
                 </li>
                 <li>Many people now follow Taoist values without formal religious practice.</li>
-                <li>Taoism is also spread globally through <strong>books, wellness trends, and online content</strong>.</li>
+                <li>Taoism is also spread globally through <strong>books, wellness trends, and online content</strong>.
+                </li>
               </ul>
             </div>
           </div>
@@ -143,110 +180,178 @@
     </div>
   </section>
 
-<!-- Content (Festivals) -->
+  <!-- Content (Festivals) -->
   <section id="festival">
     <div class="container section">
       <h2 class="text-center my-3 my-md-5 section-title fs-3 fs-md-2">🎊 Types of Festivals 🎊</h2>
-      
+
       <!-- Festival 1 -->
+      <!-- Two-column layout with text content and image carousel -->
+      <!-- align-items-center: vertically centers content between columns -->
+      <!-- festival festival-row: custom classes for styling -->
+      <!-- mb-4 mb-md-5: responsive bottom margins for spacing between festivals -->
       <div class="row align-items-center festival festival-row mb-4 mb-md-5">
+        <!-- Text Content Column -->
+        <!-- col-lg-8: 2/3 width on large screens -->
+        <!-- col-md-12: full width on medium screens -->
+        <!-- order-2 order-lg-1: appears second on mobile, first on desktop -->
+        <!-- mb-4 mb-lg-0: bottom margin on mobile, no margin on large screens -->
         <div class="col-lg-8 col-md-12 order-2 order-lg-1 mb-4 mb-lg-0">
+          <!-- Festival information card -->
+          <!-- festival-card: custom class for additional styling -->
+          <!-- p-3 p-md-4: responsive padding (medium on mobile, large on desktop) -->
           <div class="card festival-card shadow-sm p-3 p-md-4">
+            <!-- card-title: Bootstrap class for card headings -->
+            <!-- fs-5 fs-md-4: responsive font sizing -->
             <h4 class="card-title fs-5 fs-md-4">🎉 Chinese New Year</h4>
+            <!-- Festival description -->
+            <!-- card-text: Bootstrap class for card body text -->
+            <!-- fs-6: consistent body text size -->
             <p class="card-text fs-6">
-              The Chinese New Year marks the beginning of a new lunar cycle. Taoist families clean their homes to sweep away bad luck and welcome good fortune. Prayers are offered at temples and red lanterns glow through the night.
+              The Chinese New Year marks the beginning of a new lunar cycle. Taoist families clean their homes to sweep
+              away bad luck and welcome good fortune. Prayers are offered at temples and red lanterns glow through the
+              night.
             </p>
+            <!-- Inspirational quote related to the festival -->
+            <!-- blockquote: Bootstrap component for styled quotations -->
+            <!-- fs-6: consistent quote text size -->
             <blockquote class="blockquote fs-6">"New beginnings come from letting go."</blockquote>
-            
+
+            <!-- Interactive flip cards section -->
+            <!-- container-fluid: full width within parent container -->
+            <!-- my-3 my-md-5: responsive vertical margins -->
             <div class="container-fluid my-3 my-md-5">
+              <!-- Flip cards row with responsive spacing -->
+              <!-- justify-content-center: cen between cards -->
+              <!-- g-3 g-md-4: responsive gutters between cards -->
               <div class="row justify-content-center g-3 g-md-4">
-                <!-- cards 1 -->
+                <!-- Flip Card 1: Cleaning Timing -->
+                <!-- col-12: full width on mobile -->
+                <!-- col-sm-6: half width on small screens -->
+                <!-- col-lg-4: 1/3 width on large screens -->
+                <!-- d-flex justify-content-center: centers card within column -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                  <!-- Custom flip card component -->
+                  <!-- flip-card: custom class for 3D flip animation -->
                   <div class="flip-card">
+                    <!-- Inner container that handles the flip animation -->
+                    <!-- flip-card-inner: custom class for flip transformation -->
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🧹 Cleaning Timing
-                        </div>
-                      </div>
+                      <!-- Front side of card - visible by default -->
+                      <!-- flip-card-front: custom class for front face styling -->
+                      <div class="flip-card-front">🧹 Cleaning Timing</div>
+                      <!-- Back side of card - revealed on hover/click -->
+                      <!-- flip-card-back: custom class for back face styling -->
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Cleaning during the first few days of the New Year is avoided as it is believed to sweep away good fortune therefore homes are cleaned before to remove bad luck.
-                        </div>
+                        Cleaning during the first few days of the New Year is avoided as it is believed to sweep away
+                        good fortune therefore homes are cleaned before to remove bad luck.
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- cards 2 -->
+                <!-- Flip Card 2: Oranges Symbolism -->
+                <!-- Same responsive column structure as Card 1 -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🍊 Oranges Symbolize Wealth
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🍊 Oranges Symbolize Wealth</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Mandarin oranges are exchanged because they sound like "success" in Chinese. Their round shape also symbolizes completeness and wealth.
-                        </div>
+                        Mandarin oranges are exchanged because they sound like "success" in Chinese. Their round shape
+                        also symbolizes completeness and wealth.
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- cards 3 -->
+                <!-- Flip Card 3: Red Color Significance -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🔴 Red vs. Nian
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🔴 Red vs. Nian</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Red was originally used to scare away the monster Nian, who came out every New Year's Eve. Firecrackers and red helped protect villagers from harm.
-                        </div>
+                        Red was originally used to scare away the monster Nian, who came out every New Year's Eve.
+                        Firecrackers and red helped protect villagers from harm.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-        
+
+        <!-- Image Carousel Column -->
+        <!-- col-lg-4: 1/3 width on large screens -->
+        <!-- col-md-12: full width on medium screens -->
+        <!-- order-1 order-lg-2: appears first on mobile, second on desktop -->
+        <!-- d-flex align-items-center justify-content-center: centers carousel content -->
         <div class="col-lg-4 col-md-12 order-1 order-lg-2 d-flex align-items-center justify-content-center">
+          <!-- Bootstrap carousel component for image slideshow -->
+          <!-- carousel slide: basic carousel classes -->
+          <!-- carousel-fade: adds fade transition between slides -->
+          <!-- data-bs-ride="carousel": auto-starts carousel slideshow -->
           <div id="carouselCNY" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+            <!-- Carousel navigation indicators (dots to do li in css)-->
+            <!-- Shows current slide and allows direct navigation to specific slides -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselCNY" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <!-- Active indicator for first slide -->
+              <!-- data-bs-target: specifies which carousel this controls -->
+              <!-- data-bs-slide-to: slide index to navigate to -->
+              <!-- aria-current="true": accessibility indicator for current slide -->
+              <button type="button" data-bs-target="#carouselCNY" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselCNY" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselCNY" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- Container for carousel slides -->
+            <!-- carousel-inner: Bootstrap class for slide container -->
             <div class="carousel-inner rounded shadow festival-carousel">
+              <!-- Slide 1: Lanterns -->
+              <!-- carousel-item active: first slide (visible by default) -->
               <div class="carousel-item active">
-                <img src="../images/lantern.jpg" class="d-block w-100" alt="Lanterns" style="height: 300px; object-fit: cover;">
+                <!-- Slide image with consistent sizing -->
+                <!-- d-block w-100: makes image block-level and full width -->
+                <!-- object-fit: cover: scales image to fill container while maintaining aspect ratio -->
+                <!-- src: https://unsplash.com/photos/hanging-round-red-lanterns-near-crowd-at-daytime-HVIpG9A2uLY -->
+                <img src="../images/lantern.jpg" class="d-block w-100" alt="Lanterns"
+                  style="height: 300px; object-fit: cover;">
+                <!-- Image caption overlay -->
+                <!-- carousel-caption: Bootstrap class for text overlay on images -->
                 <div class="carousel-caption">
+                  <!-- Caption text with responsive font sizing -->
                   <p class="fs-6 fs-md-5">Lanterns for peace and luck</p>
                 </div>
               </div>
+              <!-- Slide 2: Temple Visit -->
+              <!-- carousel-item: inactive slide (hidden until navigated to) -->
               <div class="carousel-item">
-                <img src="../images/cnytemple.jpg" class="d-block w-100" alt="Temple visit" style="height: 300px; object-fit: cover;">
+                <!-- https://unsplash.com/photos/a-group-of-people-standing-in-front-of-a-building-4_UsaKZeBIg -->
+                <img src="../images/cnytemple.jpg" class="d-block w-100" alt="Temple visit"
+                  style="height: 300px; object-fit: cover;">
                 <div class="carousel-caption">
                   <p class="fs-6 fs-md-5">Prayers at the temple</p>
                 </div>
               </div>
+              <!-- Slide 3: House Visiting -->
               <div class="carousel-item">
-                <img src="../images/housevisit.jpg" class="d-block w-100" alt="House visit" style="height: 300px; object-fit: cover;">
+                <!-- https://www.pexels.com/photo/asian-grandma-with-envelope-against-granddaughter-during-new-year-holiday-7363703/ -->
+                <img src="../images/housevisit.jpg" class="d-block w-100" alt="House visit"
+                  style="height: 300px; object-fit: cover;">
                 <div class="carousel-caption">
                   <p class="fs-6 fs-md-5">House visiting</p>
                 </div>
               </div>
             </div>
+            <!-- Carousel navigation controls -->
+            <!-- Previous slide button -->
+            <!-- carousel-control-prev: Bootstrap class for left arrow styling -->
+            <!-- data-bs-target: specifies which carousel to control -->
+            <!-- data-bs-slide="prev": triggers previous slide navigation -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselCNY" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
+            <!-- Next slide button -->
+            <!-- carousel-control-next: Bootstrap class for right arrow styling -->
+            <!-- data-bs-slide="next": triggers next slide navigation -->
             <button class="carousel-control-next" type="button" data-bs-target="#carouselCNY" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
@@ -260,25 +365,21 @@
           <div class="card festival-card shadow-sm p-3 p-md-4">
             <h4 class="card-title fs-5 fs-md-4">🕯️ Qingming Festival</h4>
             <p class="card-text fs-6">
-              Also known as Tomb Sweeping Day, this festival emphasizes filial piety. Taoists visit ancestral tombs to clean and honor their family's legacy, symbolizing respect and connection between generations.
+              Also known as Tomb Sweeping Day, this festival emphasizes filial piety. Taoists visit ancestral tombs to
+              clean and honor their family's legacy, symbolizing respect and connection between generations.
             </p>
             <blockquote class="blockquote fs-6">"Respect for the past leads to peace in the present."</blockquote>
-            
+
             <div class="container-fluid my-3 my-md-5">
               <div class="row justify-content-center g-3 g-md-4">
                 <!-- cards 1 -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🪦 Qingming's Surprising Origin
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🪦 Qingming's Surprising Origin</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Qingming comes from the Cold Food Festival, where people avoided cooking with fire to honor a loyal servant, Jie Zitui. It later merged into the tomb-sweeping tradition we know today.
-                        </div>
+                        Qingming comes from the Cold Food Festival, where people avoided cooking with fire to honor a
+                        loyal servant, Jie Zitui. It later merged into the tomb-sweeping tradition we know today.
                       </div>
                     </div>
                   </div>
@@ -287,15 +388,10 @@
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🌳 Not Just About Ancestors
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🌳 Not Just About Ancestors</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Did you know people plant trees during Qingming? It's a way to celebrate spring and honor ancestors by nurturing new life.
-                        </div>
+                        Did you know people plant trees during Qingming? It's a way to celebrate spring and honor
+                        ancestors by nurturing new life.
                       </div>
                     </div>
                   </div>
@@ -304,49 +400,52 @@
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🪁 Kites and Spirits?
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🪁 Kites and Spirits?</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Flying kites isn't just for fun—some let the string go so the kite "carries away" bad luck or sends messages to ancestors in the sky.
-                        </div>
+                        Flying kites isn't just for fun—some let the string go so the kite "carries away" bad luck or
+                        sends messages to ancestors in the sky.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-12 order-1 order-lg-2 d-flex align-items-center justify-content-center">
           <div id="carouselQingming" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselQingming" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner rounded shadow festival-carousel">
               <div class="carousel-item active">
-                <img src="../images/tomb.jpg" class="d-block w-100" alt="Tomb sweeping" style="height: 250px; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block">
-                  <p>Paying respects at family tomb</p>
+                <!-- src: own picture -->
+                <img src="../images/tomb.jpg" class="d-block w-100" alt="Tomb sweeping"
+                  style="height: 300px; object-fit: cover;">
+                <div class="carousel-caption">
+                  <p class="fs-6 fs-md-5">Paying respects at family tomb</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../images/offeringancestor.jpg" class="d-block w-100" alt="Offerings" style="height: 250px; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block">
-                  <p>Offerings to ancestors</p>
+                <!-- src: https://unsplash.com/photos/incense-and-offerings-are-on-a-table-ChfdznauRVI -->
+                <img src="../images/offeringancestor.jpg" class="d-block w-100" alt="Offerings"
+                  style="height: 300px; object-fit: cover;">
+                <div class="carousel-caption">
+                  <p class="fs-6 fs-md-5">Offerings to ancestors</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../images/visiting.jpg" class="d-block w-100" alt="Visiting Columbarium" style="height: 250px; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block">
-                  <p>Paying respects at columbarium</p>
+                <!-- src: own picture -->
+                <img src="../images/visiting.jpg" class="d-block w-100" alt="Visiting Columbarium"
+                  style="height: 300px; object-fit: cover;">
+                <div class="carousel-caption">
+                  <p class="fs-6 fs-md-5">Paying respects at columbarium</p>
                 </div>
               </div>
             </div>
@@ -357,6 +456,7 @@
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
+
         </div>
       </div>
 
@@ -366,25 +466,23 @@
           <div class="card festival-card shadow-sm p-3 p-md-4">
             <h4 class="card-title fs-5 fs-md-4">🔥 Hungry Ghost Festival</h4>
             <p class="card-text fs-6">
-              The Hungry Ghost Festival, observed on the 15th night of the seventh lunar month, is rooted in Taoist and Buddhist traditions. It's believed that during this time, spirits roam freely in the living world. Taoists offer food, incense, and paper money to appease the wandering souls and protect families from misfortune.
+              The Hungry Ghost Festival, observed on the 15th night of the seventh lunar month, is rooted in Taoist and
+              Buddhist traditions. It's believed that during this time, spirits roam freely in the living world. Taoists
+              offer food, incense, and paper money to appease the wandering souls and protect families from misfortune.
             </p>
-            <blockquote class="blockquote fs-6">"Compassion extends not just to the living, but to those who came before."</blockquote>
-            
+            <blockquote class="blockquote fs-6">"Compassion extends not just to the living, but to those who came
+              before."</blockquote>
+
             <div class="container-fluid my-3 my-md-5">
               <div class="row justify-content-center g-3 g-md-4">
                 <!-- cards 1 -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          👻 Not All Ghosts Are Scary
-                        </div>
-                      </div>
+                      <div class="flip-card-front">👻 Not All Ghosts Are Scary</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          During the festival, it's believed that some spirits are just lonely or lost (not harmful). Offerings are meant to show compassion, not fear.
-                        </div>
+                        During the festival, it's believed that some spirits are just lonely or lost (not harmful).
+                        Offerings are meant to show compassion, not fear.
                       </div>
                     </div>
                   </div>
@@ -393,15 +491,10 @@
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🎭 Front Row Seats Stay Empty
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🎭 Front Row Seats Stay Empty</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          At getai (street opera shows), the front row is left empty (not for latecomers), but for the spirits to enjoy the performance undisturbed.
-                        </div>
+                        At getai (street opera shows), the front row is left empty (not for latecomers), but for the
+                        spirits to enjoy the performance undisturbed.
                       </div>
                     </div>
                   </div>
@@ -410,47 +503,48 @@
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <div class="flip-card-content">
-                          🍚 Food Offerings Have Rules
-                        </div>
-                      </div>
+                      <div class="flip-card-front">🍚 Food Offerings Have Rules</div>
                       <div class="flip-card-back">
-                        <div class="flip-card-content scrollable">
-                          Not all food is offered freely. Some communities avoid spicy or pungent food to keep the atmosphere respectful for both the living and the spirits.
-                        </div>
+                        Not all food is offered freely. Some communities avoid spicy or pungent food to keep the
+                        atmosphere respectful for both the living and the spirits.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-12 order-1 order-lg-2 d-flex align-items-center justify-content-center">
           <div id="carouselGhost" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselGhost" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner rounded shadow festival-carousel">
               <div class="carousel-item active">
-                <img src="../images/burningjosspaper.jpg" class="d-block w-100" alt="Burning joss paper" style="height: 300px; object-fit: cover;">
+                <!-- src: https://unsplash.com/photos/man-in-black-t-shirt-and-gray-shorts-holding-burning-wood-during-daytime-RzIsC4QcTYk -->
+                <img src="../images/burningjosspaper.jpg" class="d-block w-100" alt="Burning joss paper"
+                  style="height: 300px; object-fit: cover;">
                 <div class="carousel-caption">
                   <p class="fs-6 fs-md-5">People burning joss papers</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../images/offerings.jpg" class="d-block w-100" alt="Offering on roadside" style="height: 300px; object-fit: cover;">
+                <!-- src: https://unsplash.com/photos/orange-fruits-on-gray-concrete-floor-during-daytime-TE_MD3PkDiw -->
+                <img src="../images/offerings.jpg" class="d-block w-100" alt="Offering on roadside"
+                  style="height: 300px; object-fit: cover;">
                 <div class="carousel-caption">
                   <p class="fs-6 fs-md-5">Offerings for the wandering spirits</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../images/hungryghostfood.jpg" class="d-block w-100" alt="Food for the spirits" style="height: 300px; object-fit: cover;">
+                <!-- src: https://unsplash.com/photos/white-and-orange-plastic-pack-on-green-grass-u_Ef3PIQB3w -->
+                <img src="../images/hungryghostfood.jpg" class="d-block w-100" alt="Food for the spirits"
+                  style="height: 300px; object-fit: cover;">
                 <div class="carousel-caption">
                   <p class="fs-6 fs-md-5">Food for the spirits</p>
                 </div>
@@ -468,17 +562,20 @@
     </div>
   </section>
 
-<!-- Taoism vs Buddhism Comparison -->
+  <!-- Taoism vs Buddhism Comparison -->
   <section>
     <div class="container my-3 my-md-5" id="comparison">
       <h2 class="text-center mb-4 fs-3 fs-md-2">Common Misconceptions</h2>
-      <p class="text-center mb-4 mb-md-5 fs-6">
-        While both philosophies aim to cultivate peace and self-awareness, they differ greatly in origin, beliefs, and practices.
+      <p class="text-center mb-4 mb-md-5 text-muted fs-6">
+        While both philosophies aim to cultivate peace and self-awareness, they differ greatly in origin, beliefs, and
+        practices.
       </p>
 
       <div class="row g-3 g-md-4">
         <!-- Taoism Card -->
+        <!-- Taoism Card Column - takes half width on medium+ screens -->
         <div class="col-md-6 mb-3 mb-md-4">
+          <!-- Bootstrap card with green border, shadow effect, and full height -->
           <div class="card border-success shadow h-100">
             <div class="card-body p-3 p-md-4">
               <h4 class="card-title text-success fs-5 fs-md-4">Taoism</h4>
@@ -510,20 +607,30 @@
     </div>
   </section>
 
+  <!-- Call-to-action section encouraging users to take the quiz -->
+  <div class="text-center mt-5 pt-4">
+    <!-- Centered container with maximum width constraint -->
+    <div class="mx-auto mb-4" style="max-width: 500px;">
+      <h5 class="fs-5 fw-semibold text-dark mb-3">Ready to Test Your Knowledge? 🤔</h5>
+      <p class="fs-6 text-muted mb-4">
+        Looking to know and understand more about misconceptions? Click on the button below to learn more about Taoism.
+      </p>
+    </div>
+  </div>           
+
+  <!-- Quiz button section with responsive margins -->
   <div class="text-center my-3 my-md-5">
+    <!-- Custom styled button with layered shadow effects -->
     <button id="startQuizBtn" class="button btn btn-primary btn-lg">
-      <span class="shadow"></span>
-      <span class="edge"></span>
-      <span class="front">Taoist Misconceptions Quiz</span>
+      <!-- Button styling layers for 3D effect -->
+      <span class="shadow"></span> <!-- Shadow layer -->
+      <span class="edge"></span> <!-- Edge/border layer -->
+      <span class="front">Taoist Misconceptions Quiz</span> <!-- Front text layer -->
     </button>
   </div>
 
-<!-- Footer -->
-<footer class="text-center py-3 py-md-4 bg-light">
-  <small class="fs-6">&copy; 2025 Taoism Insight. All rights reserved.</small>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../js/code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/code.js"></script>
 </body>
+
 </html>
